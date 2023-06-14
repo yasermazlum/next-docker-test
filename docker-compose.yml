@@ -1,12 +1,5 @@
 services:
-  web:
-    build:
-      context: ./
-      target: runner
-    volumes:
-      - .:/app
-    command: npm run dev
+  next:
+    build: ./my-next-app
     ports:
       - "3000:3000"
-    environment:
-      NODE_ENV: development
