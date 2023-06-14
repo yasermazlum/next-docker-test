@@ -1,5 +1,5 @@
 services:
   next:
-    build: ./my-next-app
+    build: ./panel
     ports:
       - "3000:3000"
