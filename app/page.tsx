@@ -8,15 +8,6 @@ export const getData = async ():Promise<Array<{id:number, title:string}>> =>{
 const Home = async () => {
   var x:Array<{id:number, title:string}> = await getData();
 
-  /* useEffect(()=>{
-    /* getData().then((res:any)=>{
-      x = res;
-      console.log(x)
-    }); 
-    const data = getData().then().then().catch();
-    console.log(data)
-  },[]); */
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
